@@ -15,7 +15,7 @@ app.use(bodyParser.json({ type: "application/json", limit: "50mb" }));
 dbConnection.dbConnect();
 
 app.get("/urls", (req, res) => {
-  res.send("Welcome to URL Shortner Application.");
+  res.send("Welcome to URL Shortener Application.");
 });
 
 app.use("/", urlRouter);
